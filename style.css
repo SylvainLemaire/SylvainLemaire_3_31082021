@@ -8,6 +8,8 @@
 :root {
     --btn-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
     --btn-font-weight: bold;
+    --primary-color: #9356DC;
+    --bg-light-grey-color: #F6F6F6;
 }
 
 /*************************************************/
@@ -18,6 +20,9 @@ body {
 }
 main {
     margin-top: 50px;
+}
+h3, p, i {
+    margin: 0;
 }
 a {
     text-decoration: none;
@@ -54,7 +59,12 @@ button {
     align-items: center;
     flex-direction: row-reverse; 
 }
-
+.flex_between_center {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
 /***********************Header********************/
 
 /*Logo*/
@@ -69,7 +79,7 @@ button {
     
 /*Lieu*/
 
-.bg_dark_grey {
+.bg_place {
     background-color: #EAEAEA;
     box-shadow: inset 0px 10px 10px -10px rgba(0,0,0,0.5);
     width: 100%;
@@ -85,8 +95,8 @@ button {
 
 /*Présentation de l'entreprise*/
 
-.bg_light_grey {
-    background-color: #F6F6F6;
+.bg_description {
+    background-color: var(--bg-light-grey-color);
     width: 100%;
     height: 285px;
 }
@@ -108,7 +118,7 @@ button {
     border-radius: 25px;
     background: linear-gradient(175deg,#FF79DA 0%,#9356DC 100%);
     box-shadow: var(--btn-box-shadow);
-    margin-top: 15px;
+    margin-top: 32px;
 }
 .btn_explore:hover {
     background: linear-gradient(175deg,#ff91e0 0%,#9b67db 100%);
@@ -121,7 +131,7 @@ button {
 
 .bg_circle {
     color: white;
-    background-color: #9356DC;
+    background-color: var(--primary-color);
     width: 25px;
     height: 25px;
     border-radius: 25px;
@@ -133,7 +143,7 @@ button {
     margin-top: 23px;
 }
 .btn_concept {
-    background-color: #F6F6F6;
+    background-color: var(--bg-light-grey-color);
     width: 320px;
     height: 75px;
     border-radius: 20px;
@@ -145,13 +155,13 @@ button {
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.35);
 }
 .btn_concept:hover > .fa-mobile-alt {
-    color: #9356DC;
+    color: var(--primary-color);
 }
 .btn_concept:hover > .fa-list-ul {
-    color: #9356DC;
+    color: var(--primary-color);
 }
 .btn_concept:hover > .fa-store {
-    color: #9356DC;
+    color: var(--primary-color);
 }
 .fa-mobile-alt, .fa-list-ul, .fa-store {
     color: #7E7E7E;
@@ -176,4 +186,38 @@ button {
 }
 .btn_store {
     margin-top: 23px;
+}
+
+/**********Cartes des restaurants**********/
+
+.bg_cards {
+    background-color: var(--bg-light-grey-color);
+    width: 100%;
+    height: 1195px;
+    margin-top: 70px;
+    padding-top: 35px;
+}
+.cards {
+    height: 1060px;
+    margin-top: 25px;
+}
+.fig {
+    background-color: white;
+    width: 335px;
+    height: 250px;
+    margin: 0;
+    border-radius: 15px;
+    box-shadow: var(--btn-box-shadow);
+
+}
+.fig:hover {
+    background-color: #F5EDFF;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.35);
+}
+.card_img {
+    width: 335px;
+    height: 175px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
