@@ -3,25 +3,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+/*Variables*/
+
+:root {
+    --btn-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+    --btn-font-weight: bold;
+}
+
+/*************************************************/
+
 body {
     font-family: "Roboto", sans-serif;
     margin-top: 8px;
+}
+main {
+    margin-top: 50px;
+}
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+    cursor: pointer;
 }
 .font_shrikhand {
     font-family: "Shrikhand", sans-serif;
     font-size: 1.7rem;
 }
+.subtitle {
+    font-size: 1.45rem;
+    margin-left: 20px;
+}
 
 /*Flexbox*/
 
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .flex_column_center {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+.flex_center_reverse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse; 
+}
 
-/********************Header********************/
+/***********************Header********************/
 
 /*Logo*/
 
@@ -40,9 +74,6 @@ body {
     box-shadow: inset 0px 10px 10px -10px rgba(0,0,0,0.5);
     width: 100%;
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 8px;
 }
 .icon_padding {
@@ -74,14 +105,75 @@ body {
     color: white;
     width: 220px;
     height: 50px;
-    border: none;
     border-radius: 25px;
     background: linear-gradient(175deg,#FF79DA 0%,#9356DC 100%);
-    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.3);
+    box-shadow: var(--btn-box-shadow);
     margin-top: 15px;
-    cursor: pointer;
 }
 .btn_explore:hover {
-    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.4);
     background: linear-gradient(175deg,#ff91e0 0%,#9b67db 100%);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
+}
+
+/********************Main********************/
+
+/*Concept*/
+
+.bg_circle {
+    color: white;
+    background-color: #9356DC;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    margin: 0;
+    margin-right: -13px;
+    margin-top: 8px;
+}
+.circle_list {
+    margin-top: 23px;
+}
+.btn_concept {
+    background-color: #F6F6F6;
+    width: 320px;
+    height: 75px;
+    border-radius: 20px;
+    box-shadow: var(--btn-box-shadow);
+    margin-top: 8px;
+}
+.btn_concept:hover {
+    background-color: #F5EDFF;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.35);
+}
+.btn_concept:hover > .fa-mobile-alt {
+    color: #9356DC;
+}
+.btn_concept:hover > .fa-list-ul {
+    color: #9356DC;
+}
+.btn_concept:hover > .fa-store {
+    color: #9356DC;
+}
+.fa-mobile-alt, .fa-list-ul, .fa-store {
+    color: #7E7E7E;
+}
+.btn_mobile_title {
+    font-weight: var(--btn-font-weight);
+    padding-right: 35px;
+    padding-left: 25px;
+}
+.btn_list_title {
+    font-weight: var(--btn-font-weight);
+    padding-right: 52px;
+    padding-left: 20px;
+}
+.btn_store_title {
+    font-weight: var(--btn-font-weight);
+    padding-right: 47px;
+    padding-left: 16px;
+}
+.btn_list {
+    margin-top: 23px;
+}
+.btn_store {
+    margin-top: 23px;
 }
