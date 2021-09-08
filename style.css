@@ -21,7 +21,7 @@ body {
 header {
     height: 65px;
 }
-h3, p, i {
+h3, ul, p, i {
     margin: 0;
 }
 a {
@@ -46,6 +46,10 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.flex_column {
+    display: flex;
+    flex-direction: column;
 }
 .flex_column_center {
     display: flex;
@@ -74,7 +78,9 @@ button {
     height: 30px;
     margin-top: 12px;
 }
-    
+
+/********************Main********************/
+
 /*Lieu*/
 
 .bg_place {
@@ -124,69 +130,60 @@ button {
     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
 }
 
-/********************Main********************/
-
 /*Concept*/
 
-.bg_circle {
-    color: white;
-    background-color: var(--primary-color);
-    width: 25px;
-    height: 25px;
-    border-radius: 25px;
-    margin: 0;
-    margin-right: -13px;
-    margin-top: 8px;
+.concept {
+    margin-top: 50px;
 }
-.circle_list {
-    margin-top: 23px;
+ol {
+    counter-reset: list-circle;
+    list-style: none;
+    height: 270px;
+    margin-top: 30px;
+    margin-left: 12px;
+    padding: 0;
 }
-.btn_concept {
-    background-color: var(--bg-light-grey-color);
-    width: 320px;
+ol li {
+    counter-increment: list-circle;
+    width: 322px;
     height: 75px;
     border-radius: 20px;
     box-shadow: var(--btn-box-shadow);
-    margin-top: 8px;
+    display: flex;
+    align-items: center;
 }
-.btn_concept:hover {
+ol li:first-child {
+    background-color: var(--bg-light-grey-color);
+}
+ol li:nth-child(2) {
+    background-color: var(--bg-light-grey-color);
+}
+ol li:last-child {
     background-color: #F5EDFF;
-    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.35);
 }
-.btn_concept:hover > .fa-mobile-alt {
+ol li::before {
+    content: counter(list-circle);
+    background: var(--primary-color);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: white;
+    margin-left: -12px;
+    margin-right: 22px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-mobile-alt {
+    margin-right: 28px;
+}
+.fa-list-ul {
+    margin-right: 22px;
+}
+.fa-store {
     color: var(--primary-color);
+    margin-right: 18px;
 }
-.btn_concept:hover > .fa-list-ul {
-    color: var(--primary-color);
-}
-.btn_concept:hover > .fa-store {
-    color: var(--primary-color);
-}
-.fa-mobile-alt, .fa-list-ul, .fa-store {
-    color: #7E7E7E;
-}
-.btn_mobile_title {
-    font-weight: var(--btn-font-weight);
-    padding-right: 35px;
-    padding-left: 25px;
-}
-.btn_list_title {
-    font-weight: var(--btn-font-weight);
-    padding-right: 52px;
-    padding-left: 20px;
-}
-.btn_store_title {
-    font-weight: var(--btn-font-weight);
-    padding-right: 47px;
-    padding-left: 16px;
-}
-.btn_list {
-    margin-top: 23px;
-}
-.btn_store {
-    margin-top: 23px;
-}
-
 /**********Cartes des restaurants**********/
 
 .bg_cards {
