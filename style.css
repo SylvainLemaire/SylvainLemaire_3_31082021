@@ -24,6 +24,9 @@ header {
 h3, ul, p, i {
     margin: 0;
 }
+h3, p {
+    color: black;
+}
 a {
     text-decoration: none;
 }
@@ -126,7 +129,7 @@ button {
     margin-top: 32px;
 }
 .btn_explore:hover {
-    background: linear-gradient(175deg,#ff91e0 0%,#9b67db 100%);
+    opacity: 0.8;
     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
 }
 
@@ -186,29 +189,21 @@ ol li::before {
 }
 /**********Cartes des restaurants**********/
 
-.bg_cards {
+.card_bg {
     background-color: var(--bg-light-grey-color);
     width: 100%;
     height: 1195px;
     margin-top: 70px;
     padding-top: 35px;
 }
-.cards {
-    height: 1060px;
-    margin-top: 25px;
-}
-.fig {
-    background-color: white;
+.card {
+    position: relative;
     width: 335px;
     height: 250px;
-    margin: 0;
-    border-radius: 15px;
+    background-color: white;
     box-shadow: var(--btn-box-shadow);
-
-}
-.fig:hover {
-    background-color: #F5EDFF;
-    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.35);
+    border-radius: 15px;
+    margin: 0;
 }
 .card_img {
     width: 335px;
@@ -216,4 +211,38 @@ ol li::before {
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+.card_label {
+    position: absolute;
+    background-color: #99E2D0;
+    color: #30A387;
+    box-sizing: border-box;
+    width: 80px;
+    height: 30px;
+    padding: 0;
+    padding-left: 7px;
+    padding-top: 5px;
+    margin-left: -90px;
+    margin-top: 12px;
+    border-radius: 3px;
+}
+.card_body {
+    margin-left: 15px;
+}
+.card_title {
+    font-size: 1.1rem;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+.card_place {
+    font-size: 1.1rem;
+}
+.fa-heart {
+    float: right;
+    margin-top: -35px;
+    margin-right: 25px;
+    color: black;
+}
+.fa-heart:active {
+    color: #FF79DA;
 }
