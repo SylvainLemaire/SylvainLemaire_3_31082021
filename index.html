@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Ohmyfood!</title>
+
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" as="style" />
+        <link rel="preload" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" as="style" />
+        <link rel="preload" href="style.css" as="style" />
+
+        <meta name="description" content="Ohmyfood! est une entreprise de commande de repas en ligne.
+        Notre concept vous permet de composer votre propre menu et réduire votre temps d’attente dans les
+        restaurants car votre menu est préparé à l’avance. Plus de perte de temps à consulter la carte!" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header class="flex_center" id="logo_link">
+            
+            <!--Logo-->
+
+            <img class="logo" src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood"/>
+        </header>
+
+        <main>
+            
+            <!--Lieu-->
+
+            <form class="bg_place flex_center">
+                <i class="fas fa-map-marker-alt icon_margin"></i>
+                <input class="place" type="search" name="q" id="maRecherche" 
+                value="Paris, Belleville" aria-label="Rechercher un lieu">
+            </form>
+                
+            <!--Présentation de l'entreprise-->
+
+            <section class="bg_description flex_column_center">
+                <h1 class="title_size">Réservez le menu qui vous convient</h1>
+                <p class="description_size">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <a href="#link_restaurants">
+                    <button class="btn_explore">Explorer nos restaurants</button>
+                </a>
+            </section>
+
+            
+            <!--Concept-->
+            
+            <section class="concept">
+                <h2 class="subtitle">Fonctionnement</h2>
+                <ol class="flex_between_center">
+                    <li><i class="fas fa-mobile-alt"></i><b>Choisissez un restaurant</b></li>
+                    <li><i class="fas fa-list-ul"></i><b>Composez votre menu</b></li>
+                    <li><i class="fas fa-store"></i><b>Dégustez au restaurant</b></li>
+                </ol>       
+            </section>
+
+            <!--Cartes des restaurants-->
+            
+            <article class="card_bg" id="link_restaurants">
+                <h2 class="subtitle">Restaurants</h2>
+            
+                <!--Carte "La palette de goût"-->
+                
+                <a href="menus/la_palette_du_gout.html" class="flex_center">
+                    <figure class="card">
+                        <img class="card_img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant, La palette du goût"> 
+                        <b class="card_label">Nouveau</b>
+                        <figcaption class="card_body">                                
+                            <h3 class="card_title">La palette du goût</h3>
+                            <p class="card_place">Ménilmontant</p>
+                            <i class="far fa-heart fa-lg"></i>
+                        </figcaption>
+                    </figure>    
+                </a>
+            </article>
+                
+                <!--Carte "La note enchantée"-->
+                
+                <!--Carte "À la française"-->
+                            
+                <!--Carte "Le délice des sens"-->
+
+        </main>
+
+        <footer>
+            
+            <!--Logo footer-->
+            
+            <a href="#logo_link"><img class="footer_logo" src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood"></a>
+            
+            <!--Liens footer-->
+            
+            <ul>
+                <li><a href=""><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
+                <li><a href=""><i class="fas fa-hands-helping fa-xs"></i> Devenir partenaire</a></li>
+                <li><a href="">Mentions légales</a></li>
+                <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
