@@ -8,7 +8,7 @@
 
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" as="style" />
         <link rel="preload" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" as="style" />
-        <link rel="preload" href="style.css" as="style" />
+        <link rel="preload" href="/style.css" as="style" />
 
         <meta name="description" content="Ohmyfood! est une entreprise de commande de repas en ligne.
         Notre concept vous permet de composer votre propre menu et réduire votre temps d’attente dans les
@@ -16,30 +16,30 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="/style.css" as="style"/>
     </head>
 
     <body>
-        <header>
+        <header class="flex_center" id="logo_link">
             
             <!--Bouton de retour vers la page d'accueil-->
 
-            <a href="index.html"><i class="fas fa-arrow-left"></i></a> 
+            <a href="/index.html"><i class="fas fa-arrow-left fa-lg"></i></a> 
             
             <!--Logo-->
 
-            <figure>
-                <img src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood" />
-            </figure>
+            <a href="/index.html"><img class="logo" src="/images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood" /></a>
+        </header>
+            
+        <main>
+            
 
             <!--Image "La palette du goût"-->
 
             <figure>
-                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant, La palette du goût">
+                <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant, La palette du goût">
             </figure>
-        </header>
 
-        <main>
             
             <!--Nom du restaurant-->
 
@@ -127,7 +127,7 @@
             <!--Logo footer-->
             
             <figure>
-                <img src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
+                <img src="/images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
             </figure>
             
             <!--Liens footer-->
