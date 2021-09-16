@@ -54,10 +54,6 @@ button {
     justify-content: center;
     align-items: center;
 }
-.flex_column {
-    display: flex;
-    flex-direction: column;
-}
 .flex_column_center {
     display: flex;
     flex-direction: column;
@@ -202,15 +198,16 @@ ol li::before {
 }
 .card {
     position: relative;
-    width: 335px;
+    width: 89.3vw;
     height: 250px;
     background-color: white;
     box-shadow: var(--btn-box-shadow);
     border-radius: 15px;
     margin: 0;
+    argin-left: 20px;
 }
 .card_img {
-    width: 335px;
+    width: 89.3vw;
     height: 175px;
     object-fit: cover;
     border-top-left-radius: 15px;
@@ -231,24 +228,41 @@ ol li::before {
     border-radius: 3px;
 }
 .card_body {
-    margin-left: 15px;
+    position: relative;
+}
+.card_description {
+    box-sizing: border-box;
+    width: 89.3vw;
+    height: 70px;
+    padding-top: 12px;
+    padding-left: 15px;
+    margin: 0;
 }
 .card_title {
     font-size: 1.1rem;
-    margin-top: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 .card_place {
     font-size: 1.1rem;
 }
-.fa-heart {
-    float: right;
-    margin-top: -35px;
-    margin-right: 25px;
-    color: black;
+svg {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    margin-top: 17px;
+    margin-left: 76vw;
+    overflow: visible;
+    cursor: pointer;
 }
-.fa-heart:active {
-    color: #FF79DA;
+svg path { 
+    fill: white;
+    stroke: black;
+    stroke-width: 20px;
+    transition: 1s 0s ease;
+}
+svg path:hover {
+    fill: url(#icon_color);
+    stroke: url(#icon_color);
 }
 
 /********************Footer**********************/
