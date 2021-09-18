@@ -363,8 +363,11 @@ ul li a:hover {
     font-weight: normal;
     font-size: 1rem;
     margin: 0;
-    margin-top: 45px;
+    margin-top: 33px;
     margin-left: 20px;
+}
+.top {
+    margin-top: 47px;
 }
 .style {
     background-color: dodgerblue;
@@ -376,6 +379,7 @@ ul li a:hover {
 .list {
     height: 235px;
     margin-top: 12px;
+    cursor: pointer;
 }
 .list_bg {
     box-sizing: border-box;
@@ -395,3 +399,4 @@ ul li a:hover {
     justify-content: space-between;
     margin-top: 7px;
 }
+
