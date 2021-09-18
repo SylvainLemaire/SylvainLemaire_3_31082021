@@ -357,6 +357,7 @@ ul li a:hover {
 
 .article_bg {
     background-color: var(--bg-light-grey-color);
+    height: 1360px;
 }
 .uppercase {
     text-transform: uppercase;
@@ -400,3 +401,25 @@ ul li a:hover {
     margin-top: 7px;
 }
 
+/*Bouton "Commander"*/
+
+.btn_order {
+    background-color: var(--bg-light-grey-color);
+    border-radius: 50px;
+    margin-top: 45px;
+    padding: 0;
+}
+.order {
+    background: linear-gradient(175deg,#FF79DA 0%,#9356DC 100%);  
+    color: white;
+    width: 185px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: var(--btn-box-shadow);
+    cursor: pointer;
+}
+.order:hover {
+    opacity: 0.8;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
+}
