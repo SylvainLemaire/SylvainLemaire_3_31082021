@@ -200,6 +200,9 @@ ol li::before {
     margin-top: 70px;
     padding-top: 35px;
 }
+.block_cards {
+    height: 1060px;
+}
 .card {
     position: relative;
     width: 89.3vw;
