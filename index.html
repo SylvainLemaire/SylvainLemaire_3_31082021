@@ -20,7 +20,7 @@
     </head>
 
     <body>
-        <header class="flex_center" id="logo_link">
+        <header class="header flex_center" id="logo_link">
             
             <!--Logo-->
 
@@ -42,20 +42,17 @@
             <section class="bg_description flex_column_center">
                 <h1 class="title_size">Réservez le menu qui vous convient</h1>
                 <p class="description_size">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                <a href="#link_restaurants">
-                    <button class="btn_explore">Explorer nos restaurants</button>
-                </a>
+                <a class="btn_explore flex_center" href="#link_restaurants">Explorer nos restaurants</a>
             </section>
-
             
             <!--Concept-->
             
             <section class="concept">
                 <h2 class="subtitle">Fonctionnement</h2>
                 <ol class="flex_between_center">
-                    <li><i class="fas fa-mobile-alt"></i><b>Choisissez un restaurant</b></li>
-                    <li><i class="fas fa-list-ul"></i><b>Composez votre menu</b></li>
-                    <li><i class="fas fa-store"></i><b>Dégustez au restaurant</b></li>
+                    <li><i class="fas fa-mobile-alt"></i><em>Choisissez un restaurant</em></li>
+                    <li><i class="fas fa-list-ul"></i><em>Composez votre menu</em></li>
+                    <li><i class="fas fa-store"></i><em>Dégustez au restaurant</em></li>
                 </ol>       
             </section>
 
@@ -63,27 +60,135 @@
             
             <article class="card_bg" id="link_restaurants">
                 <h2 class="subtitle">Restaurants</h2>
-            
-                <!--Carte "La palette de goût"-->
+                <div class="block_cards flex_between_center">          
                 
-                <a href="menus/la_palette_du_gout.html" class="flex_center">
+                    <!--Carte "La palette du goût"-->
+                
                     <figure class="card">
-                        <img class="card_img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant, La palette du goût"> 
-                        <b class="card_label">Nouveau</b>
+                        <a href="menus/la_palette_du_gout.html">
+                            <img class="card_img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant, La palette du goût"> 
+                            <b class="card_label">Nouveau</b>
+                        </a>    
                         <figcaption class="card_body">                                
-                            <h3 class="card_title">La palette du goût</h3>
-                            <p class="card_place">Ménilmontant</p>
-                            <i class="far fa-heart fa-lg"></i>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
+                            class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 512 512">
+                                <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
+                                96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
+                                199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                                </path>
+                                <defs>
+                                    <linearGradient id="icon_color" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="0%" stop-color="#9356DC"/>
+                                        <stop offset="100%" stop-color="#FF79DA"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <a href="menus/la_palette_du_gout.html">
+                                <figure class="card_description">
+                                    <h3 class="card_title">La palette du goût</h3>
+                                    <p class="card_place">Ménilmontant</p>
+                                </figure>    
+                            </a>                      
                         </figcaption>
                     </figure>    
-                </a>
+                    
+                    <!--Carte "La note enchantée"-->
+
+                    <figure class="card">
+                        <a href="menus/la_palette_du_gout.html">
+                            <img class="card_img" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Restaurant, La note enchantée"> 
+                            <b class="card_label">Nouveau</b>
+                        </a>    
+                        <figcaption class="card_body">                                
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
+                            class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 512 512">
+                                <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
+                                96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
+                                199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                                </path>
+                                <defs>
+                                    <linearGradient id="icon_color" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="0%" stop-color="#9356DC"/>
+                                        <stop offset="100%" stop-color="#FF79DA"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <a href="menus/la_palette_du_gout.html">
+                                <figure class="card_description">
+                                    <h3 class="card_title">La note enchantée</h3>
+                                    <p class="card_place">Charonne</p>
+                                </figure>    
+                            </a>                      
+                        </figcaption>
+                    </figure>
+                    
+                    <!--Carte "À la française"-->
+                    
+                    <figure class="card">
+                        <a href="menus/la_palette_du_gout.html">
+                            <img class="card_img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant, À la française"> 
+                        </a>    
+                        <figcaption class="card_body">                                
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
+                            class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 512 512">
+                                <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
+                                96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
+                                199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                                </path>
+                                <defs>
+                                    <linearGradient id="icon_color" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="0%" stop-color="#9356DC"/>
+                                        <stop offset="100%" stop-color="#FF79DA"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <a href="menus/la_palette_du_gout.html">
+                                <figure class="card_description">
+                                    <h3 class="card_title">À la française</h3>
+                                    <p class="card_place">Cité Rouge</p>
+                                </figure>    
+                            </a>                      
+                        </figcaption>
+                    </figure>
+                    
+                    <!--Carte "Le délice des sens"-->
+
+                    <figure class="card">
+                        <a href="menus/la_palette_du_gout.html">
+                            <img class="card_img" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Restaurant, Le délice des sens"> 
+                        </a>    
+                        <figcaption class="card_body">                                
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
+                            class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 512 512">
+                                <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
+                                96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
+                                199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                                </path>
+                                <defs>
+                                    <linearGradient id="icon_color" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="0%" stop-color="#9356DC"/>
+                                        <stop offset="100%" stop-color="#FF79DA"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <a href="menus/la_palette_du_gout.html">
+                                <figure class="card_description">
+                                    <h3 class="card_title">Le délice des sens</h3>
+                                    <p class="card_place">Folie-Méricourt</p>
+                                </figure>    
+                            </a>                      
+                        </figcaption>
+                    </figure>
+                </div>          
             </article>
                 
-                <!--Carte "La note enchantée"-->
                 
-                <!--Carte "À la française"-->
+                
                             
-                <!--Carte "Le délice des sens"-->
 
         </main>
 
@@ -95,7 +200,7 @@
             
             <!--Liens footer-->
             
-            <ul>
+            <ul class="footer_ul">
                 <li><a href=""><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
                 <li><a href=""><i class="fas fa-hands-helping fa-xs"></i> Devenir partenaire</a></li>
                 <li><a href="">Mentions légales</a></li>

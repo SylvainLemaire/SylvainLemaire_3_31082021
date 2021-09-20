@@ -18,7 +18,7 @@
 body {
     font-family: "Roboto", sans-serif;
 }
-header {
+.header {
     height: 65px;
 }
 h3, ul, p, i {
@@ -26,6 +26,14 @@ h3, ul, p, i {
 }
 h3, p {
     color: black;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+em {
+    font-style: normal;
+    font-weight: bold;
 }
 a {
     text-decoration: none;
@@ -49,10 +57,6 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.flex_column {
-    display: flex;
-    flex-direction: column;
 }
 .flex_column_center {
     display: flex;
@@ -196,9 +200,12 @@ ol li::before {
     margin-top: 70px;
     padding-top: 35px;
 }
+.block_cards {
+    height: 1060px;
+}
 .card {
     position: relative;
-    width: 335px;
+    width: 89.3vw;
     height: 250px;
     background-color: white;
     box-shadow: var(--btn-box-shadow);
@@ -206,7 +213,7 @@ ol li::before {
     margin: 0;
 }
 .card_img {
-    width: 335px;
+    width: 89.3vw;
     height: 175px;
     object-fit: cover;
     border-top-left-radius: 15px;
@@ -227,24 +234,41 @@ ol li::before {
     border-radius: 3px;
 }
 .card_body {
-    margin-left: 15px;
+    position: relative;
+}
+.card_description {
+    box-sizing: border-box;
+    width: 89.3vw;
+    height: 70px;
+    padding-top: 12px;
+    padding-left: 15px;
+    margin: 0;
 }
 .card_title {
     font-size: 1.1rem;
-    margin-top: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 .card_place {
     font-size: 1.1rem;
 }
-.fa-heart {
-    float: right;
-    margin-top: -35px;
-    margin-right: 25px;
-    color: black;
+svg {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    margin-top: 17px;
+    margin-left: 76vw;
+    overflow: visible;
+    cursor: pointer;
 }
-.fa-heart:active {
-    color: #FF79DA;
+svg path { 
+    fill: transparent;
+    stroke: black;
+    stroke-width: 20px;
+    transition: 1s 0s ease;
+}
+svg path:hover {
+    fill: url(#icon_color);
+    stroke: url(#icon_color);
 }
 
 /********************Footer**********************/
@@ -263,7 +287,7 @@ footer {
     margin-top: 25px;
     margin-bottom: 18px;
 }
-ul {
+.footer_ul {
     list-style: none;
     margin-left: 25px;
     width: 100%;
@@ -288,7 +312,7 @@ ul li a:hover {
 
 /**************************************************/
 
-/*************Page "La palette du goût"************/
+/*************Page menu "La palette du goût" ************/
 
 /**********************Header**********************/
 
@@ -298,4 +322,107 @@ ul li a:hover {
     color: black;
     margin-left: -82px;
     margin-top: 8px;
+}
+
+/***************Header de l'article*****************/
+
+.header_img {
+    position: relative;
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+.title_bg {
+    position: absolute;
+    box-sizing: border-box;
+    background-color: var(--bg-light-grey-color);
+    border-radius: 50px 50px 0 0;
+    width: 100%;
+    height: 68px;
+    margin-top: -55px;
+    display: flex;
+    align-items: flex-end;
+}
+.header_title {
+    margin: 0;
+    margin-left: 20px;
+}
+.svg_icon {
+    width: 25px;
+    height: 25px;
+    overflow: visible;
+    cursor: pointer;
+    margin-left: 315px;
+    margin-bottom: 6px;
+}
+
+/**********************Article***********************/
+
+.article_bg {
+    background-color: var(--bg-light-grey-color);
+    height: 1360px;
+}
+.uppercase {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1rem;
+    margin: 0;
+    margin-top: 33px;
+    margin-left: 20px;
+}
+.top {
+    margin-top: 47px;
+}
+.style {
+    background-color: #99E2D0;
+    width: 40px;
+    height: 3px;
+    margin-left: 20px;
+    margin-top: 4px;
+}
+.list {
+    height: 235px;
+    margin-top: 12px;
+}
+.list_bg {
+    box-sizing: border-box;
+    background-color: white;
+    width: 345px;
+    height: 70px;
+    padding: 14px 22px 0 12px;
+    border-radius: 15px;
+    box-shadow: var(--btn-box-shadow);
+    cursor: pointer;
+}
+.list_title {
+    font-size: 1.1rem;
+}
+.list_description {
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+/*Bouton "Commander"*/
+
+.btn_order {
+    background-color: var(--bg-light-grey-color);
+    border-radius: 50px;
+    margin-top: 45px;
+    padding: 0;
+}
+.order {
+    background: linear-gradient(175deg,#FF79DA 0%,#9356DC 100%);  
+    color: white;
+    width: 185px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: var(--btn-box-shadow);
+    cursor: pointer;
+}
+.order:hover {
+    opacity: 0.8;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
 }
