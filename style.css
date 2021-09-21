@@ -264,7 +264,6 @@ svg path {
     fill: transparent;
     stroke: black;
     stroke-width: 20px;
-    transition: 1s 0s ease;
 }
 svg path:hover {
     fill: url(#icon_color);
@@ -393,6 +392,27 @@ ul li a:hover {
     border-radius: 15px;
     box-shadow: var(--btn-box-shadow);
     cursor: pointer;
+}
+.anim {
+    animation: apparition 1s ease;
+}
+.opa {
+    opacity: 0;
+    animation: apparition 1s 0.25s ease forwards;
+}
+.time {
+    opacity: 0;
+    animation: apparition 1s 0.5s ease forwards;
+}
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 .list_title {
     font-size: 1.1rem;
