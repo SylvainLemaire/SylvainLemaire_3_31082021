@@ -384,17 +384,63 @@ ul li a:hover {
     margin-top: 12px;
 }
 .list_bg {
+    position: relative;
     box-sizing: border-box;
-    background-color: white;
     width: 345px;
     height: 70px;
     padding: 14px 22px 0 12px;
     border-radius: 15px;
     box-shadow: var(--btn-box-shadow);
     cursor: pointer;
+    transition: 0.5s;
+    background: linear-gradient(90deg, white 85%, #99E2D0 15%);
+    background-size: 407px 70px;
+    overflow: hidden;
+}
+.list_bg::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f058";
+    font-weight: 900;
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    right: -40px;
+    transition-property: transform;
+    transition: 0.5s;
+}
+.list_bg:hover::after {
+    right: 6%;
+    transform:  rotate(360deg);
+}
+.list_bg:hover {
+    background-position: -60px 0;
+}
+.price {
+    position: absolute;
+    right: 22px;
+    bottom: 12px;
+    transition-property: transform;
+    transition: 0.5s;
+}
+.list_bg:hover .price {
+    transform: translateX(-60px);
+}
+.list_description {
+    width: 285px;
+    font-size: 0.9rem;
+    margin-top: 7px;
+    transition: 0.5s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list_bg:hover .list_description {
+    width: 195px;
 }
 .anim {
-    animation: apparition 1s ease;
+    opacity: 0;
+    animation: apparition 1s ease forwards;
 }
 .opa {
     opacity: 0;
@@ -417,12 +463,6 @@ ul li a:hover {
 .list_title {
     font-size: 1.1rem;
 }
-.list_description {
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 7px;
-}
 
 /*Bouton "Commander"*/
 
@@ -433,7 +473,7 @@ ul li a:hover {
     padding: 0;
 }
 .order {
-    background: linear-gradient(175deg,#FF79DA 0%,#9356DC 100%);  
+    background: linear-gradient(175deg,#FF79DA 0%,#9356DC 100%);
     color: white;
     width: 185px;
     height: 50px;
