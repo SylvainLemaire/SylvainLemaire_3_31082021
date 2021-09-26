@@ -44,25 +44,33 @@
                     <!--Nom du restaurant-->
                     
                     <section class="title_bg">
-                        <h1 class="font_shrikhand header_title">La palette du goût</h1>
+                        <h1 class="header_title">La palette du goût</h1>
 
                         <!--Bouton "J'aime"-->
             
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
                             class="svg-inline--fa fa-heart fa-w-16 svg_icon" role="img" xmlns="http://www.w3.org/2000/svg" 
                             viewBox="0 0 512 512">
-                                <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
+                            <path class="svg_origin" fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
                                 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
                                 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                </path>
-                                <defs>
-                                    <linearGradient id="icon_color" x1="0" x2="0" y1="0" y2="1">
-                                        <stop offset="0%" stop-color="#9356DC"/>
-                                        <stop offset="100%" stop-color="#FF79DA"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                    </section>    
+                            </path>
+                            <defs>
+                                <linearGradient id="icon_color" x1="0" x2="0" y1="0" y2="1">
+                                    <stop offset="0%" stop-color="#9356DC"/>
+                                    <stop offset="100%" stop-color="#FF79DA"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
+                            class="svg-inline--fa fa-heart fa-w-16 svg_icon" role="img" xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 512 512">
+                            <path class="svg_gradient" fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
+                                96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
+                                199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                            </path>
+                        </svg>
+                    </section>
                 </header>
                 
                 <!--Section menu-->
@@ -70,7 +78,7 @@
                 <!--Les entrées-->
                 
                 <section>
-                    <h2 class="uppercase top">entrées</h2>
+                    <h2 class="uppercase top">Entrées</h2>
                     <div class="style"></div>
                     <ul class="list flex_between_center">
                         <li class="list_bg anim">
@@ -91,7 +99,7 @@
                 <!--Les plats-->
                 
                 <section>
-                    <h2 class="uppercase">plats</h2>
+                    <h2 class="uppercase">Plats</h2>
                     <div class="style"></div>
                     <ul class="list flex_between_center">
                         <li class="list_bg anim">
@@ -112,7 +120,7 @@
                 <!--Les desserts-->
                 
                 <section>
-                    <h2 class="uppercase">desserts</h2>
+                    <h2 class="uppercase">Desserts</h2>
                     <div class="style"></div>
                     <ul class="list flex_between_center">
                         <li class="list_bg anim">
@@ -132,10 +140,8 @@
                 
                 <!--Bouton de validation de commande-->
                 
-                <form class="flex_center">
-                    <button class="btn_order"> 
-                        <input class="order" type="submit" value="Commander">
-                    </button>
+                <form class="flex_center btn_order">
+                    <input class="order" type="submit" value="Commander">
                 </form>
             </article>
         </main>
