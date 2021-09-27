@@ -1,7 +1,6 @@
 /*Google fonts*/
 
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 
 /*Variables*/
 
@@ -18,34 +17,38 @@
 body {
     font-family: "Roboto", sans-serif;
 }
-.header {
-    height: 65px;
-}
-h3, ul, p, i {
+
+h3,
+ul,
+p,
+i {
     margin: 0;
 }
-h3, p {
+
+h3,
+p {
     color: black;
 }
+
 ul {
     list-style-type: none;
     padding: 0;
 }
+
 em {
     font-style: normal;
     font-weight: bold;
 }
+
 a {
     text-decoration: none;
 }
+
 button {
     border: none;
     cursor: pointer;
 }
-.font_shrikhand {
-    font-family: "Shrikhand", sans-serif;
-    font-size: 1.7rem;
-}
+
 .subtitle {
     font-size: 1.45rem;
     margin-left: 20px;
@@ -64,22 +67,53 @@ button {
     align-items: center;
     text-align: center;
 }
-.flex_center_reverse {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row-reverse; 
-}
 .flex_between_center {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
 }
+
+/*******************Chargement********************/
+
+/*.back {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.loading {
+    position: absolute;
+    border: 10px solid transparent;
+    border-top: 10px solid #FF79DA;
+    border-bottom: 10px solid #9356DC;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spinner 1s linear infinite;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+}
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}*/
+
 /*********************Header**********************/
 
 /*Logo*/
 
+.header {
+    height: 65px;
+}
 .logo {
     width: 165px;
     height: 30px;
@@ -220,10 +254,11 @@ ol li::before {
     border-top-right-radius: 15px;
 }
 .card_label {
+    box-sizing: border-box;
     position: absolute;
     background-color: #99E2D0;
     color: #30A387;
-    box-sizing: border-box;
+    border-radius: 3px;
     width: 80px;
     height: 30px;
     padding: 0;
@@ -231,7 +266,6 @@ ol li::before {
     padding-top: 5px;
     margin-left: -90px;
     margin-top: 12px;
-    border-radius: 3px;
 }
 .card_body {
     position: relative;
@@ -260,15 +294,23 @@ svg {
     overflow: visible;
     cursor: pointer;
 }
-svg path { 
+.svg_origin { 
     fill: transparent;
     stroke: black;
     stroke-width: 20px;
-    transition: 1s 0s ease;
 }
-svg path:hover {
+.svg_gradient {
     fill: url(#icon_color);
     stroke: url(#icon_color);
+    stroke-width: 30px;
+    opacity: 0;
+    transition: 1s;
+}
+.svg_gradient:hover {
+    opacity: 1;
+}
+.svg_gradient:active {
+    opacity: 1;
 }
 
 /********************Footer**********************/
@@ -289,12 +331,12 @@ footer {
 }
 .footer_ul {
     list-style: none;
-    margin-left: 25px;
     width: 100%;
     height: 95px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 25px;
     padding: 0;
 }
 ul li a {
@@ -312,7 +354,7 @@ ul li a:hover {
 
 /**************************************************/
 
-/*************Page menu "La palette du goût" ************/
+/*********************Pages menus ********************/
 
 /**********************Header**********************/
 
@@ -320,8 +362,8 @@ ul li a:hover {
 
 .fa-arrow-left {
     color: black;
-    margin-left: -82px;
     margin-top: 8px;
+    margin-left: -82px;
 }
 
 /***************Header de l'article*****************/
@@ -336,14 +378,16 @@ ul li a:hover {
     position: absolute;
     box-sizing: border-box;
     background-color: var(--bg-light-grey-color);
-    border-radius: 50px 50px 0 0;
     width: 100%;
     height: 68px;
-    margin-top: -55px;
+    border-radius: 50px 50px 0 0;
     display: flex;
     align-items: flex-end;
+    margin-top: -55px;
 }
 .header_title {
+    font-family: "Shrikhand", sans-serif;
+    font-size: 1.7rem;
     margin: 0;
     margin-left: 20px;
 }
@@ -362,6 +406,10 @@ ul li a:hover {
     background-color: var(--bg-light-grey-color);
     height: 1360px;
 }
+.article_bg_lg {
+    background-color: var(--bg-light-grey-color);
+    height: 1460px;
+}
 .uppercase {
     text-transform: uppercase;
     font-weight: normal;
@@ -377,31 +425,99 @@ ul li a:hover {
     background-color: #99E2D0;
     width: 40px;
     height: 3px;
-    margin-left: 20px;
     margin-top: 4px;
+    margin-left: 20px;
 }
 .list {
     height: 235px;
     margin-top: 12px;
 }
+.list_lg {
+    height: 315px;
+    margin-top: 12px;
+}
 .list_bg {
+    position: relative;
     box-sizing: border-box;
-    background-color: white;
     width: 345px;
     height: 70px;
     padding: 14px 22px 0 12px;
     border-radius: 15px;
     box-shadow: var(--btn-box-shadow);
     cursor: pointer;
+    transition: 0.5s;
+    background: linear-gradient(90deg, white 85%, #99E2D0 15%);
+    background-size: 407px 70px;
+    overflow: hidden;
+}
+.list_bg::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f058";
+    font-weight: 900;
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    right: -40px;
+    transition-property: transform;
+    transition: 0.5s;
+}
+.list_bg:hover::after {
+    right: 6%;
+    transform:  rotate(360deg);
+}
+.list_bg:hover {
+    background-position: -60px 0;
+}
+.price {
+    position: absolute;
+    right: 22px;
+    bottom: 12px;
+    transition-property: transform;
+    transition: 0.5s;
+}
+.list_bg:hover .price {
+    transform: translateX(-60px);
+}
+.list_description {
+    width: 285px;
+    font-size: 0.9rem;
+    margin-top: 7px;
+    transition: 0.5s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list_bg:hover .list_description {
+    width: 195px;
+}
+.anim {
+    opacity: 0;
+    animation: apparition 1s ease forwards;
+}
+.opa {
+    opacity: 0;
+    animation: apparition 1s 0.25s ease forwards;
+}
+.time {
+    opacity: 0;
+    animation: apparition 1s 0.5s ease forwards;
+}
+.trans {
+    opacity: 0;
+    animation: apparition 1s 0.75s ease forwards;
+}
+@keyframes apparition {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 .list_title {
     font-size: 1.1rem;
-}
-.list_description {
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 7px;
 }
 
 /*Bouton "Commander"*/
@@ -413,7 +529,7 @@ ul li a:hover {
     padding: 0;
 }
 .order {
-    background: linear-gradient(175deg,#FF79DA 0%,#9356DC 100%);  
+    background: linear-gradient(175deg,#FF79DA 0%,#9356DC 100%);
     color: white;
     width: 185px;
     height: 50px;
