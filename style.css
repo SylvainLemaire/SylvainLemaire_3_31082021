@@ -1,7 +1,6 @@
 /*Google fonts*/
 
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 
 /*Variables*/
 
@@ -18,30 +17,38 @@
 body {
     font-family: "Roboto", sans-serif;
 }
-.header {
-    height: 65px;
-}
-h3, ul, p, i {
+
+h3,
+ul,
+p,
+i {
     margin: 0;
 }
-h3, p {
+
+h3,
+p {
     color: black;
 }
+
 ul {
     list-style-type: none;
     padding: 0;
 }
+
 em {
     font-style: normal;
     font-weight: bold;
 }
+
 a {
     text-decoration: none;
 }
+
 button {
     border: none;
     cursor: pointer;
 }
+
 .subtitle {
     font-size: 1.45rem;
     margin-left: 20px;
@@ -59,12 +66,6 @@ button {
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-.flex_center_reverse {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row-reverse; 
 }
 .flex_between_center {
     display: flex;
@@ -110,6 +111,9 @@ button {
 
 /*Logo*/
 
+.header {
+    height: 65px;
+}
 .logo {
     width: 165px;
     height: 30px;
@@ -250,10 +254,11 @@ ol li::before {
     border-top-right-radius: 15px;
 }
 .card_label {
+    box-sizing: border-box;
     position: absolute;
     background-color: #99E2D0;
     color: #30A387;
-    box-sizing: border-box;
+    border-radius: 3px;
     width: 80px;
     height: 30px;
     padding: 0;
@@ -261,7 +266,6 @@ ol li::before {
     padding-top: 5px;
     margin-left: -90px;
     margin-top: 12px;
-    border-radius: 3px;
 }
 .card_body {
     position: relative;
@@ -327,12 +331,12 @@ footer {
 }
 .footer_ul {
     list-style: none;
-    margin-left: 25px;
     width: 100%;
     height: 95px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 25px;
     padding: 0;
 }
 ul li a {
@@ -350,7 +354,7 @@ ul li a:hover {
 
 /**************************************************/
 
-/*************Page menu "La palette du goût" ************/
+/*********************Pages menus ********************/
 
 /**********************Header**********************/
 
@@ -358,8 +362,8 @@ ul li a:hover {
 
 .fa-arrow-left {
     color: black;
-    margin-left: -82px;
     margin-top: 8px;
+    margin-left: -82px;
 }
 
 /***************Header de l'article*****************/
@@ -374,18 +378,18 @@ ul li a:hover {
     position: absolute;
     box-sizing: border-box;
     background-color: var(--bg-light-grey-color);
-    border-radius: 50px 50px 0 0;
     width: 100%;
     height: 68px;
-    margin-top: -55px;
+    border-radius: 50px 50px 0 0;
     display: flex;
     align-items: flex-end;
+    margin-top: -55px;
 }
 .header_title {
-    margin: 0;
-    margin-left: 20px;
     font-family: "Shrikhand", sans-serif;
     font-size: 1.7rem;
+    margin: 0;
+    margin-left: 20px;
 }
 .svg_icon {
     width: 25px;
@@ -402,6 +406,10 @@ ul li a:hover {
     background-color: var(--bg-light-grey-color);
     height: 1360px;
 }
+.article_bg_lg {
+    background-color: var(--bg-light-grey-color);
+    height: 1460px;
+}
 .uppercase {
     text-transform: uppercase;
     font-weight: normal;
@@ -417,11 +425,15 @@ ul li a:hover {
     background-color: #99E2D0;
     width: 40px;
     height: 3px;
-    margin-left: 20px;
     margin-top: 4px;
+    margin-left: 20px;
 }
 .list {
     height: 235px;
+    margin-top: 12px;
+}
+.list_lg {
+    height: 315px;
     margin-top: 12px;
 }
 .list_bg {
@@ -490,6 +502,10 @@ ul li a:hover {
 .time {
     opacity: 0;
     animation: apparition 1s 0.5s ease forwards;
+}
+.trans {
+    opacity: 0;
+    animation: apparition 1s 0.75s ease forwards;
 }
 @keyframes apparition {
     from {

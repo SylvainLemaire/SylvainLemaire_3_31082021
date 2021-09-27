@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Ohmyfood! - À la française</title>
+
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" as="style">
+        <link rel="preload" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" as="style">
+        <link rel="preload" href="../style.css" as="style">
+
+        <meta name="description" content="Ohmyfood! est une entreprise de commande de repas en ligne.
+        Notre concept vous permet de composer votre propre menu et réduire votre temps d’attente dans les
+        restaurants car votre menu est préparé à l’avance. Plus de perte de temps à consulter la carte!">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+        <header class="header flex_center" id="logo_link">
+            
+            <!--Bouton de retour vers la page d'accueil-->
+
+            <a href="../index.html">
+                <i class="fas fa-arrow-left fa-lg"></i>
+            </a> 
+            
+            <!--Logo-->
+
+            <a href="../index.html"><img class="logo" src="../images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood" /></a>
+        </header>
+            
+        <main>
+            <article class="article_bg">
+                <header>
+            
+                    <!--Image "À la française"-->
+                    
+                    <img class="header_img" src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
+                    
+                    <!--Nom du restaurant-->
+                    
+                    <section class="title_bg">
+                        <h1 class="header_title">À la française</h1>
+
+                        <!--Bouton "J'aime"-->
+            
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
+                            class="svg-inline--fa fa-heart fa-w-16 svg_icon" role="img" xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 512 512">
+                            <path class="svg_origin" fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
+                                96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
+                                199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                            </path>
+                            <defs>
+                                <linearGradient id="icon_color" x1="0" x2="0" y1="0" y2="1">
+                                    <stop offset="0%" stop-color="#9356DC"/>
+                                    <stop offset="100%" stop-color="#FF79DA"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
+                            class="svg-inline--fa fa-heart fa-w-16 svg_icon" role="img" xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 512 512">
+                            <path class="svg_gradient" fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
+                                96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
+                                199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                            </path>
+                        </svg>
+                    </section>
+                </header>
+                
+                <!--Section menu-->
+                
+                <!--Les entrées-->
+                
+                <section>
+                    <h2 class="uppercase top">Entrées</h2>
+                    <div class="style"></div>
+                    <ul class="list flex_between_center">
+                        <li class="list_bg anim">
+                            <h3 class="list_title">Tartare de poulpe acidulé</h3>
+                            <p class="list_description">Aux zestes d'orange</p><b class="price">25€</b>
+                        </li>
+                        <li class="list_bg opa">
+                            <h3 class="list_title">Velouté de légumes d'antan</h3>
+                            <p class="list_description">Carotte, panais, topinambour</p><b class="price">35€</b>
+                        </li>
+                        <li class="list_bg time">
+                            <h3 class="list_title">Soupe à l'oignon</h3>
+                            <p class="list_description">Revisitéer</p><b class="price">20€</b>
+                        </li>
+                    </ul>
+                </section>
+                
+                <!--Les plats-->
+                
+                <section>
+                    <h2 class="uppercase">Plats</h2>
+                    <div class="style"></div>
+                    <ul class="list flex_between_center">
+                        <li class="list_bg anim">
+                            <h3 class="list_title">Coquilles Saint-Jacques</h3>
+                            <p class="list_description">Accompagnées d'une purée de panais</p><b class="price">40€</b>
+                        </li>
+                        <li class="list_bg opa">
+                            <h3 class="list_title">Magret de canard</h3>
+                            <p class="list_description">Et parmentier de pommes de terre</p><b class="price">35€</b>
+                        </li>
+                        <li class="list_bg time">
+                            <h3 class="list_title">Pigeonneau d’Ille-et-Vilaine</h3>
+                            <p class="list_description">Sur son lit de gnocchis aux légumes</p><b class="price">44€</b>
+                        </li>
+                    </ul>
+                </section>
+
+                <!--Les desserts-->
+                
+                <section>
+                    <h2 class="uppercase">Desserts</h2>
+                    <div class="style"></div>
+                    <ul class="list flex_between_center">
+                        <li class="list_bg anim">
+                            <h3 class="list_title">Pétales de violettes glacés</h3>
+                            <p class="list_description">Et purée de noisettes</p><b class="price">18€</b>
+                        </li>
+                        <li class="list_bg opa">
+                            <h3 class="list_title">Fondant au chocolat</h3>
+                            <p class="list_description">Revisité</p><b class="price">22€</b>
+                        </li>
+                        <li class="list_bg time">
+                            <h3 class="list_title">Millefeuille croustillant</h3>
+                            <p class="list_description">Myrtilles et pâte d’amande</p><b class="price">23€</b>
+                        </li>
+                    </ul>    
+                </section>
+                
+                <!--Bouton de validation de commande-->
+                
+                <form class="flex_center btn_order">
+                    <input class="order" type="submit" value="Commander">
+                </form>
+            </article>
+        </main>
+        
+        <footer>
+            
+            <!--Logo footer-->
+            
+            <a href="#logo_link"><img class="footer_logo" src="/images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood"></a>
+            
+            <!--Liens footer-->
+            
+            <ul class="footer_ul">
+                <li><a href=""><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
+                <li><a href=""><i class="fas fa-hands-helping fa-xs"></i> Devenir partenaire</a></li>
+                <li><a href="">Mentions légales</a></li>
+                <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
