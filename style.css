@@ -76,36 +76,67 @@ button {
 
 /*******************Chargement********************/
 
-/*.back {
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    position: absolute;
+.accueil {
+    visibility: hidden;
+    animation: accueil 0s 3s forwards;
+}
+@keyframes accueil {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
 }
 .loading {
     position: absolute;
-    border: 10px solid transparent;
-    border-top: 10px solid #FF79DA;
-    border-bottom: 10px solid #9356DC;
+    border: 8px solid transparent;
+    border-top: 8px solid #FF79DA;
+    border-bottom: 8px solid #9356DC;
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    animation: spinner 1s linear infinite;
     margin: auto;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    
+    animation: spinner 1s linear 3;
+    visibility: hidden;
 }
 @keyframes spinner {
     from {
         transform: rotate(0deg);
     }
     to {
+        visibility: visible;
         transform: rotate(360deg);
     }
-}*/
+}
+.fa-concierge-bell {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 35px;
+    bottom: 40px;
+    left: 0;
+    cursor: default;
+    animation: svg 3s;
+    visibility: hidden;
+}
+@keyframes svg {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
+}
+.svg_loading {
+    fill: var(--bg-light-grey-color);
+    stroke: #99E2D0;
+    stroke-width: 20px;
+}
 
 /*********************Header**********************/
 
