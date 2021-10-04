@@ -76,36 +76,67 @@ button {
 
 /*******************Chargement********************/
 
-/*.back {
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    position: absolute;
+.accueil {
+    visibility: hidden;
+    animation: accueil 0s 3s forwards;
+}
+@keyframes accueil {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
 }
 .loading {
     position: absolute;
-    border: 10px solid transparent;
-    border-top: 10px solid #FF79DA;
-    border-bottom: 10px solid #9356DC;
+    border: 8px solid transparent;
+    border-top: 8px solid #FF79DA;
+    border-bottom: 8px solid #9356DC;
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    animation: spinner 1s linear infinite;
     margin: auto;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    
+    animation: spinner 1s linear 3;
+    visibility: hidden;
 }
 @keyframes spinner {
     from {
         transform: rotate(0deg);
     }
     to {
+        visibility: visible;
         transform: rotate(360deg);
     }
-}*/
+}
+.fa-concierge-bell {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 35px;
+    bottom: 40px;
+    left: 0;
+    cursor: default;
+    animation: svg 3s;
+    visibility: hidden;
+}
+@keyframes svg {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
+}
+.svg_loading {
+    fill: var(--bg-light-grey-color);
+    stroke: #99E2D0;
+    stroke-width: 20px;
+}
 
 /*********************Header**********************/
 
@@ -285,32 +316,47 @@ ol li::before {
 .card_place {
     font-size: 1.1rem;
 }
-svg {
+label {
     position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 76vw;
+    bottom: 35px;
+  }
+.inp[type="checkbox"] {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 5px;
+    opacity: 0;
+    cursor: pointer;
+}
+svg {
+    position: relative;
     width: 25px;
     height: 25px;
-    margin-top: 17px;
-    margin-left: 76vw;
+    bottom: 2px;
     overflow: visible;
     cursor: pointer;
 }
-.svg_origin { 
+path {
     fill: transparent;
     stroke: black;
     stroke-width: 20px;
 }
-.svg_gradient {
+.inp[type="checkbox"]:checked ~ svg path {
     fill: url(#icon_color);
     stroke: url(#icon_color);
-    stroke-width: 30px;
     opacity: 0;
-    transition: 1s;
+    animation: color 2s forwards;
 }
-.svg_gradient:hover {
-    opacity: 1;
-}
-.svg_gradient:active {
-    opacity: 1;
+@keyframes color {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /********************Footer**********************/
@@ -391,13 +437,9 @@ ul li a:hover {
     margin: 0;
     margin-left: 20px;
 }
-.svg_icon {
-    width: 25px;
-    height: 25px;
-    overflow: visible;
-    cursor: pointer;
-    margin-left: 315px;
-    margin-bottom: 6px;
+.svg_menu {
+    bottom: 15px;
+    left: 83vw;
 }
 
 /**********************Article***********************/
@@ -428,7 +470,28 @@ ul li a:hover {
     margin-top: 4px;
     margin-left: 20px;
 }
+/*#select[type="checkbox"] {
+    position: relative;
+}
+#select[type="checkbox"]:checked ~ ul .list_bg::after {
+    right: 6%;
+    transform:  rotate(360deg);
+}
+#select[type="checkbox"]:checked ~ ul .list_bg {
+    background-position: -60px 0;
+}
+#select[type="checkbox"]:checked ~ ul .list_bg .price {
+    transform: translateX(-60px);
+}
+#select[type="checkbox"]:checked ~ ul .list_bg .list_description {
+    width: 195px;
+}
+#select[type="checkbox"]:checked ~ ul .list_bg .list_title {
+    width: 195px;
+}*/
+
 .list {
+    position: relative;
     height: 235px;
     margin-top: 12px;
 }
@@ -472,7 +535,7 @@ ul li a:hover {
 .price {
     position: absolute;
     right: 22px;
-    bottom: 12px;
+    bottom: 14px;
     transition-property: transform;
     transition: 0.5s;
 }
@@ -488,7 +551,8 @@ ul li a:hover {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.list_bg:hover .list_description {
+.list_bg:hover .list_description,
+.list_bg:hover .list_title {
     width: 195px;
 }
 .anim {
@@ -518,6 +582,11 @@ ul li a:hover {
 }
 .list_title {
     font-size: 1.1rem;
+    width: 285px;
+    transition: 0.5s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /*Bouton "Commander"*/
@@ -525,7 +594,7 @@ ul li a:hover {
 .btn_order {
     background-color: var(--bg-light-grey-color);
     border-radius: 50px;
-    margin-top: 45px;
+    margin-top: 47px;
     padding: 0;
 }
 .order {
@@ -541,4 +610,12 @@ ul li a:hover {
 .order:hover {
     opacity: 0.8;
     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
+}
+
+/********************************************************************/
+
+/**********Media Queries (min-width: 768px)**********/
+
+@media screen and (min-width: 768px) {
+    
 }
