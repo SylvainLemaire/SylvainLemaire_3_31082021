@@ -35,6 +35,7 @@
             
         <main>
             <article class="article_bg">
+                
                 <header>
             
                     <!--Image "La palette du goût"-->
@@ -48,28 +49,23 @@
 
                         <!--Bouton "J'aime"-->
             
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                            class="svg-inline--fa fa-heart fa-w-16 svg_icon" role="img" xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 0 512 512">
-                            <path class="svg_origin" fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
-                                96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
-                                199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                            </path>
-                            <defs>
-                                <linearGradient id="icon_color" x1="0" x2="0" y1="0" y2="1">
-                                    <stop offset="0%" stop-color="#9356DC"/>
-                                    <stop offset="100%" stop-color="#FF79DA"/>
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" 
-                            class="svg-inline--fa fa-heart fa-w-16 svg_icon" role="img" xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 0 512 512">
-                            <path class="svg_gradient" fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
-                                96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
-                                199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                            </path>
-                        </svg>
+                        <label class="svg_menu">
+                            <input class="inp" type="checkbox">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
+                                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <path class="svg_origin" fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
+                                    96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
+                                    199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                                </path>
+                                <defs>
+                                    <linearGradient id="icon_color" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="0%" stop-color="#9356DC"/>
+                                        <stop offset="100%" stop-color="#FF79DA"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </label>
                     </section>
                 </header>
                 
@@ -80,6 +76,7 @@
                 <section>
                     <h2 class="uppercase top">Entrées</h2>
                     <div class="style"></div>
+                    <!--<input type="checkbox" id="select" name="select">-->
                     <ul class="list flex_between_center">
                         <li class="list_bg anim">
                             <h3 class="list_title">Fricassée d'escargot</h3>
@@ -113,7 +110,7 @@
                         <li class="list_bg time">
                             <h3 class="list_title">Filet de turbot</h3>
                             <p class="list_description">Aux agrumes</p><b class="price">44€</b>
-                        </li>                    
+                        </li>
                     </ul>
                 </section>
 
