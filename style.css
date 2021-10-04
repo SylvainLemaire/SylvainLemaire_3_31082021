@@ -439,7 +439,7 @@ ul li a:hover {
 }
 .svg_menu {
     bottom: 15px;
-    left: 310px;
+    left: 83vw;
 }
 
 /**********************Article***********************/
@@ -610,4 +610,12 @@ ul li a:hover {
 .order:hover {
     opacity: 0.8;
     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
+}
+
+/********************************************************************/
+
+/**********Media Queries (min-width: 768px)**********/
+
+@media screen and (min-width: 768px) {
+    
 }
