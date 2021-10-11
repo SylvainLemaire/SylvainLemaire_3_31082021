@@ -341,13 +341,13 @@ ol li::before {
 .card_place {
     font-size: 1.1rem;
 }
-label {
+.svg_accueil {
     position: absolute;
     width: 15px;
     height: 15px;
-    left: 76vw;
+    left: 77vw;
     bottom: 35px;
-  }
+}
 .inp[type="checkbox"] {
     position: absolute;
     width: 15px;
@@ -463,8 +463,11 @@ ul li a:hover {
     margin-left: 20px;
 }
 .svg_menu {
-    bottom: 12px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
     left: 83vw;
+    bottom: 12px;
 }
 
 /**********************Article***********************/
@@ -495,36 +498,15 @@ ul li a:hover {
     margin-top: 4px;
     margin-left: 5%;
 }
-/*#select[type="checkbox"] {
-    position: relative;
-}
-#select[type="checkbox"]:checked ~ ul .list_bg::after {
-    right: 6%;
-    transform:  rotate(360deg);
-}
-#select[type="checkbox"]:checked ~ ul .list_bg {
-    background-position: -60px 0;
-}
-#select[type="checkbox"]:checked ~ ul .list_bg .price {
-    transform: translateX(-60px);
-}
-#select[type="checkbox"]:checked ~ ul .list_bg .list_description {
-    width: 195px;
-}
-#select[type="checkbox"]:checked ~ ul .list_bg .list_title {
-    width: 195px;
-}*/
 
-.list {
-    position: relative;
-    height: 235px;
-    margin-top: 12px;
+.check_item .input {
+    display: none;
 }
-.list_lg {
-    height: 315px;
-    margin-top: 12px;
+.span {
+    display: flex;
+    flex-direction: column;
 }
-.list_bg {
+.check_item .span {
     position: relative;
     box-sizing: border-box;
     width: 92vw/*345px*/;
@@ -538,7 +520,7 @@ ul li a:hover {
     background-size: /*407px*/108.3vw 70px;
     overflow: hidden;
 }
-.list_bg::after {
+.check_item .span::after {
     font-family: "Font Awesome 5 Free";
     content: "\f058";
     font-weight: 900;
@@ -550,13 +532,40 @@ ul li a:hover {
     transition-property: transform;
     transition: 0.5s;
 }
-.list_bg:hover::after {
+.check_item .input[type="checkbox"]:checked ~ .span {
+    background-position: -60px 0;
+}
+.check_item .input[type="checkbox"]:checked ~ .span::after {
+    margin-right: 50px;
+    transform:  rotate(360deg);
+}
+.check_item .input[type="checkbox"]:checked ~ .span .price {
+    transform: translateX(-60px);
+}
+.check_item .input[type="checkbox"]:checked ~ .span .list_title {
+    width: 195px;
+}
+.check_item .input[type="checkbox"]:checked ~ .span .list_description {
+    width: 195px;
+}
+
+.list {
+    position: relative;
+    height: 235px;
+    margin-top: 12px;
+}
+.list_lg {
+    height: 315px;
+    margin-top: 12px;
+}
+
+/*.list_bg:hover::after {
     margin-right: 50px;
     transform:  rotate(360deg);
 }
 .list_bg:hover {
-    background-position: -60px/*-16vw*/;
-}
+    background-position: -60px;
+}*/
 .price {
     position: absolute;
     right: 22px;
@@ -564,11 +573,12 @@ ul li a:hover {
     transition-property: transform;
     transition: 0.5s;
 }
-.list_bg:hover .price {
-    transform: translateX(-60px/*-16vw*/);
-}
+/*.list_bg:hover .price {
+    transform: translateX(-60px);
+}*/
 .list_title {
     font-size: 1.1rem;
+    font-weight: bold;
     width: 285px/*73vw*/;
     transition: 0.5s;
     white-space: nowrap;
@@ -584,10 +594,10 @@ ul li a:hover {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.list_bg:hover .list_description,
+/*.list_bg:hover .list_description,
 .list_bg:hover .list_title {
-    width: /*195px*/53vw;
-}
+    width: 53vw;
+}*/
 .anim {
     opacity: 0;
     animation: apparition 1s ease forwards;
@@ -662,6 +672,9 @@ ul li a:hover {
     .bg_description {
         height: 235px;
     }
+    .svg_accueil {
+        left: 80.2vw;
+    }
     footer {
         padding-left: 6%;
     }
@@ -706,8 +719,8 @@ ul li a:hover {
     .card_description {
         width: 45vw;
     }
-    label {
-        left: 39vw;
+    .svg_accueil {
+        left: 38.5vw;
     }
     .card_bg {
         height: 675px;
@@ -730,12 +743,18 @@ ul li a:hover {
     .style {
         margin-left: 25.5%;
     }
-    .list_bg {
+    .check_item .span {
         width: 50vw;
         background-size: 59vw 70px;
     }
-    .list_bg:hover .list_description,
+    /*.list_bg:hover .list_description,
     .list_bg:hover .list_title {
+        width: 32vw;
+    }*/
+    .check_item .input[type="checkbox"]:checked ~ .span .list_title {
+        width: 32vw;
+    }
+    .check_item .input[type="checkbox"]:checked ~ .span .list_description {
         width: 32vw;
     }
 }
@@ -760,7 +779,8 @@ ul li a:hover {
     .card_description {
         padding-top: 20px;
     }
-    label {
+    .svg_accueil {
+        left: 39.8vw;
         bottom: 28px;
     }
 
@@ -791,6 +811,9 @@ ul li a:hover {
     .card_bg {
         height: 890px;
     }
+    .svg_accueil {
+    left: 40.8vw;
+    }
 
 /**********Media Queries pages menus (min-width: 1200px)**********/
     
@@ -812,6 +835,9 @@ ul li a:hover {
     .card_bg {
         height: 900px;
     }
+    .svg_accueil {
+        left: 41.5vw;
+        }
 
 /**********Media Queries pages menus (min-width: 1440px)**********/
     
