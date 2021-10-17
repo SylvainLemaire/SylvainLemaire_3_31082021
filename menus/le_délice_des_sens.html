@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Ohmyfood! - La palette du goût</title>
+        <title>Ohmyfood! - Le délice des sens</title>
 
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" as="style">
         <link rel="preload" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" as="style">
@@ -34,7 +34,8 @@
 
         <main>
             <article class="article_bg">
-                <header>
+
+                <header class="header_height">
 
                     <!--Image "Le délice des sens"-->
 
@@ -42,29 +43,27 @@
 
                     <!--Nom du restaurant-->
 
-                    <section class="title_bg">
-                        <h1 class="header_title">Le délice des sens</h1>
+                    <h1 class="header_title">Le délice des sens</h1>
 
                         <!--Bouton "J'aime"-->
 
-                        <label class="svg_menu">
-                            <input class="inp" type="checkbox">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
-                                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512">
-                                <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
-                                    96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
-                                    199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                </path>
-                                <defs>
-                                    <linearGradient id="icon_color" x1="0" x2="0" y1="0" y2="1">
-                                        <stop offset="0%" stop-color="#9356DC"/>
-                                        <stop offset="100%" stop-color="#FF79DA"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </label>
-                    </section>
+                    <label class="svg_menu">
+                        <input class="check_svg" type="checkbox">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
+                            class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
+                                96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
+                                199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                            </path>
+                            <defs>
+                                <linearGradient id="icon_color" x1="0" x2="0" y1="0" y2="1">
+                                    <stop offset="0%" stop-color="#9356DC"/>
+                                    <stop offset="100%" stop-color="#FF79DA"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </label>
                 </header>
 
                 <!--Section menu-->
@@ -76,46 +75,46 @@
                     <div class="style"></div>
 
                     <ul class="list flex_between_center">
-                        <li class="anim">
+                        <li class="first_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Tartare de thon
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Assaisonné au yuzu
-                                    </span>
+                                    </em>
                                     <b class="price">25€</b>
                                 </span>
                             </label>
                         </li>
 
-                        <li class="opa">
+                        <li class="second_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Bouchée de homard croustillant
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Et sa farandole de petits légumes
-                                    </span>
+                                    </em>
                                     <b class="price">35€</b>
                                 </span>
                             </label>
                         </li>
 
-                        <li class="time">
+                        <li class="third_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Velouté de cèpes
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Aux truffes
-                                    </span>
+                                    </em>
                                     <b class="price">20€</b>
                                 </span>
                             </label>
@@ -130,46 +129,46 @@
                     <div class="style"></div>
 
                     <ul class="list flex_between_center">
-                        <li class="anim">
+                        <li class="first_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Poulet rôti aux herbes de Provence
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Et sa crème de truffe
-                                    </span>
+                                    </em>
                                     <b class="price">40€</b>
                                 </span>
                             </label>
                         </li>
 
-                        <li class="opa">
+                        <li class="second_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Langouste rôtie
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Et ses légumes de saison
-                                    </span>
+                                    </em>
                                     <b class="price">35€</b>
                                 </span>
                             </label>
                         </li>
 
-                        <li class="time">
+                        <li class="third_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Côte de boeuf Angus
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Et sa purée de panais
-                                    </span>
+                                    </em>
                                     <b class="price">44€</b>
                                 </span>
                             </label>
@@ -184,46 +183,46 @@
                     <div class="style"></div>
 
                     <ul class="list flex_between_center">
-                        <li class="anim">
+                        <li class="first_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Farandole de desserts
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Du chef
-                                    </span>
+                                    </em>
                                     <b class="price">18€</b>
                                 </span>
                             </label>
                         </li>
 
-                        <li class="opa">
+                        <li class="second_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Crème brulée
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Revisitée
-                                    </span>
+                                    </em>
                                     <b class="price">22€</b>
                                 </span>
                             </label>
                         </li>
 
-                        <li class="time">
+                        <li class="third_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Tiramisu
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         À la noisette
-                                    </span>
+                                    </em>
                                     <b class="price">23€</b>
                                 </span>
                             </label>
