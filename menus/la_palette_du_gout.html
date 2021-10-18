@@ -11,8 +11,7 @@
         <link rel="preload" href="../style.css" as="style">
 
         <meta name="description" content="Ohmyfood! est une entreprise de commande de repas en ligne.
-        Notre concept vous permet de composer votre propre menu et réduire votre temps d’attente dans les
-        restaurants car votre menu est préparé à l’avance. Plus de perte de temps à consulter la carte!">
+        Composez votre propre menu et réduisez votre temps d’attente dans les restaurants">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
@@ -30,13 +29,13 @@
 
             <!--Logo-->
 
-            <a href="../index.html"><img class="logo" src="../images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood" /></a>
+            <a href="../index.html"><img class="logo" src="../images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood"></a>
         </header>
 
         <main>
             <article class="article_bg">
 
-                <header>
+                <header class="header_height">
 
                     <!--Image "La palette du goût"-->
 
@@ -44,29 +43,27 @@
 
                     <!--Nom du restaurant-->
 
-                    <section class="title_bg">
-                        <h1 class="header_title">La palette du goût</h1>
+                    <h1 class="header_title">La palette du goût</h1>
 
                         <!--Bouton "J'aime"-->
 
-                        <label class="svg_menu">
-                            <input class="inp" type="checkbox">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
-                                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512">
-                                <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
-                                    96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
-                                    199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                </path>
-                                <defs>
-                                    <linearGradient id="icon_color" x1="0" x2="0" y1="0" y2="1">
-                                        <stop offset="0%" stop-color="#9356DC"/>
-                                        <stop offset="100%" stop-color="#FF79DA"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </label>
-                    </section>
+                    <label class="svg_menu">
+                        <input class="check_svg" type="checkbox">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
+                            class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
+                                96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
+                                199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                            </path>
+                            <defs>
+                                <linearGradient id="icon_color" x1="0" x2="0" y1="0" y2="1">
+                                    <stop offset="0%" stop-color="#9356DC"/>
+                                    <stop offset="100%" stop-color="#FF79DA"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </label>
                 </header>
 
                 <!--Section menu-->
@@ -74,50 +71,50 @@
                 <!--Les entrées-->
 
                 <section>
-                    <h2 class="uppercase top">Entrées</h2>
+                    <h2 class="uppercase">Entrées</h2>
                     <div class="style"></div>
 
                     <ul class="list flex_between_center">
-                        <li class="anim">
+                        <li class="first_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Fricassée d'escargot
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Au piment d'espelette
-                                    </span>
+                                    </em>
                                     <b class="price">25€</b>
                                 </span>
                             </label>
                         </li>
 
-                        <li class="opa">
+                        <li class="second_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Foie gras de canard mi-cuit
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Et ses copeaux de truffe noire
-                                    </span>
+                                    </em>
                                     <b class="price">35€</b>
                                 </span>
                             </label>
                         </li>
 
-                        <li class="time">
+                        <li class="third_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Oeuf au plat
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Assaisonné à la truffe sur lit de caviar
-                                    </span>
+                                    </em>
                                     <b class="price">20€</b>
                                 </span>
                             </label>
@@ -132,46 +129,46 @@
                     <div class="style"></div>
 
                     <ul class="list flex_between_center">
-                        <li class="anim">
+                        <li class="first_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Filet de boeuf aux herbes
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Accompagné de sa ribambelle de légumes
-                                    </span>
+                                    </em>
                                     <b class="price">40€</b>
                                 </span>
                             </label>
                         </li>
 
-                        <li class="opa">
+                        <li class="second_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Parmentier de queue de boeuf
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         À la truffe noire sur sa purée de panais
-                                    </span>
+                                    </em>
                                     <b class="price">35€</b>
                                 </span>
                             </label>
                         </li>
 
-                        <li class="time">
+                        <li class="third_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Filet de turbot
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Aux agrumes
-                                    </span>
+                                    </em>
                                     <b class="price">44€</b>
                                 </span>
                             </label>
@@ -186,46 +183,46 @@
                     <div class="style"></div>
 
                     <ul class="list flex_between_center">
-                        <li class="anim">
+                        <li class="first_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Paris-Brest
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Revisité
-                                    </span>
+                                    </em>
                                     <b class="price">18€</b>
                                 </span>
                             </label>
                         </li>
 
-                        <li class="opa">
+                        <li class="second_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Macaron au chocolat d'exception
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Et glace à la vanille de Madagascar
-                                    </span>
+                                    </em>
                                     <b class="price">22€</b>
                                 </span>
                             </label>
                         </li>
 
-                        <li class="time">
+                        <li class="third_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Mousse au chocolat
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Au piment d'Espelette et à la truffe noire
-                                    </span>
+                                    </em>
                                     <b class="price">23€</b>
                                 </span>
                             </label>
@@ -250,9 +247,9 @@
             <!--Liens footer-->
 
             <ul class="footer_ul">
-                <li><a href=""><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
-                <li><a href=""><i class="fas fa-hands-helping fa-xs"></i> Devenir partenaire</a></li>
-                <li><a href="">Mentions légales</a></li>
+                <li><a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
+                <li><a href="#"><i class="fas fa-hands-helping fa-xs"></i> Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
                 <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
             </ul>
         </footer>

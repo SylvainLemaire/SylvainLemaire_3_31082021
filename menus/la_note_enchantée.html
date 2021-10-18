@@ -11,8 +11,7 @@
         <link rel="preload" href="../style.css" as="style">
 
         <meta name="description" content="Ohmyfood! est une entreprise de commande de repas en ligne.
-        Notre concept vous permet de composer votre propre menu et réduire votre temps d’attente dans les
-        restaurants car votre menu est préparé à l’avance. Plus de perte de temps à consulter la carte!">
+        Composez votre propre menu et réduisez votre temps d’attente dans les restaurants">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
@@ -30,12 +29,13 @@
 
             <!--Logo-->
 
-            <a href="../index.html"><img class="logo" src="../images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood" /></a>
+            <a href="../index.html"><img class="logo" src="../images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood"></a>
         </header>
 
         <main>
             <article class="article_bg_lg">
-                <header>
+
+                <header class="header_height">
 
                     <!--Image "La note enchantée"-->
 
@@ -43,29 +43,27 @@
 
                     <!--Nom du restaurant-->
 
-                    <section class="title_bg">
-                        <h1 class="header_title">La note enchantée</h1>
+                    <h1 class="header_title">La note enchantée</h1>
 
                         <!--Bouton "J'aime"-->
 
-                        <label class="svg_menu">
-                            <input class="inp" type="checkbox">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
-                                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512">
-                                <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
-                                    96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
-                                    199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                </path>
-                                <defs>
-                                    <linearGradient id="icon_color" x1="0" x2="0" y1="0" y2="1">
-                                        <stop offset="0%" stop-color="#9356DC"/>
-                                        <stop offset="100%" stop-color="#FF79DA"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </label>
-                    </section>
+                    <label class="svg_menu">
+                        <input class="check_svg" type="checkbox">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
+                            class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
+                                96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
+                                199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                            </path>
+                            <defs>
+                                <linearGradient id="icon_color" x1="0" x2="0" y1="0" y2="1">
+                                    <stop offset="0%" stop-color="#9356DC"/>
+                                    <stop offset="100%" stop-color="#FF79DA"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </label>
                 </header>
 
                 <!--Section menu-->
@@ -73,65 +71,65 @@
                 <!--Les entrées-->
 
                 <section>
-                    <h2 class="uppercase top">Entrées</h2>
+                    <h2 class="uppercase">Entrées</h2>
                     <div class="style"></div>
-                    
+
                     <ul class="list_lg flex_between_center">
-                        <li class="anim">
+                        <li class="first_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Ravioles de foie gras
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Accompagnés de leur crème à la truffe
-                                    </span>
+                                    </em>
                                     <b class="price">25€</b>
                                 </span>
                             </label>
                         </li>
 
-                        <li class="opa">
+                        <li class="second_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Caviar osciètre
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Sur blini à la farine de blé noir
-                                    </span>
+                                    </em>
                                     <b class="price">35€</b>
                                 </span>
                             </label>
                         </li>
 
-                        <li class="time">
+                        <li class="third_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Homard et espuma de potiron
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Mariné aux zestes d'orange
-                                    </span>
+                                    </em>
                                     <b class="price">20€</b>
                                 </span>
                             </label>
                         </li>
 
-                        <li class="trans">
+                        <li class="fourth_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Foie gras de canard cuit entier
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Confiture de figue et pain toasté
-                                    </span>
+                                    </em>
                                     <b class="price">35€</b>
                                 </span>
                             </label>
@@ -146,46 +144,46 @@
                     <div class="style"></div>
 
                     <ul class="list flex_between_center">
-                        <li class="anim">
+                        <li class="first_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Noix de coquilles Saint-Jacques
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Sur lit de purée de céleri-rave
-                                    </span>
+                                    </em>
                                     <b class="price">40€</b>
                                 </span>
                             </label>
                         </li>
 
-                        <li class="opa">
+                        <li class="second_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Langoustine poêlée
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Purée de patate douce
-                                    </span>
+                                    </em>
                                     <b class="price">35€</b>
                                 </span>
                             </label>
                         </li>
 
-                        <li class="time">
+                        <li class="third_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Mijoté de queue de boeuf
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Et riz sauvage aux zestes de citron
-                                    </span>
+                                    </em>
                                     <b class="price">44€</b>
                                 </span>
                             </label>
@@ -200,46 +198,46 @@
                     <div class="style"></div>
 
                     <ul class="list flex_between_center">
-                        <li class="anim">
+                        <li class="first_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Macaron noisette et chocolat
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Glace au caramel brun et sel de Guérande
-                                    </span>
+                                    </em>
                                     <b class="price">18€</b>
                                 </span>
                             </label>
                         </li>
 
-                        <li class="opa">
+                        <li class="second_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Baba au rhum revisité
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Avec son coulis de citron
-                                    </span>
+                                    </em>
                                     <b class="price">22€</b>
                                 </span>
                             </label>
                         </li>
 
-                        <li class="time">
+                        <li class="third_apparition">
                             <label class="check_item">
-                                <input class="input" type="checkbox">
-                                <span class="span">
-                                    <span class="list_title">
+                                <input class="none" type="checkbox">
+                                <span class="item">
+                                    <strong class="list_title">
                                         Tarte au citron meringuée
-                                    </span>
-                                    <span class="list_description">
+                                    </strong>
+                                    <em class="list_description">
                                         Déstructurée
-                                    </span>
+                                    </em>
                                     <b class="price">23€</b>
                                 </span>
                             </label>
@@ -264,9 +262,9 @@
             <!--Liens footer-->
 
             <ul class="footer_ul">
-                <li><a href=""><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
-                <li><a href=""><i class="fas fa-hands-helping fa-xs"></i> Devenir partenaire</a></li>
-                <li><a href="">Mentions légales</a></li>
+                <li><a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
+                <li><a href="#"><i class="fas fa-hands-helping fa-xs"></i> Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
                 <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
             </ul>
         </footer>
