@@ -15,12 +15,26 @@
 
 /*keyframes*/
 
+@-webkit-keyframes accueil {
+    to {
+        visibility: visible;
+    }
+}
 @keyframes accueil {
     to {
         visibility: visible;
     }
 }
 
+@-webkit-keyframes spinner {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        visibility: visible;
+        transform: rotate(360deg);
+    }
+}
 @keyframes spinner {
     from {
         transform: rotate(0);
@@ -31,12 +45,25 @@
     }
 }
 
+@-webkit-keyframes svg {
+    to {
+        visibility: visible;
+    }
+}
 @keyframes svg {
     to {
         visibility: visible;
     }
 }
 
+@-webkit-keyframes color {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 @keyframes color {
     from {
         opacity: 0;
@@ -46,6 +73,15 @@
     }
 }
 
+@-webkit-keyframes apparition {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 @keyframes apparition {
     from {
         transform: translateY(10px);
@@ -298,6 +334,7 @@ path {
 
 .accueil {
     visibility: hidden;
+    -webkit-animation: accueil 0s 3s forwards;
     animation: accueil 0s 3s forwards;
 }
 
@@ -313,6 +350,7 @@ path {
     right: 0;
     bottom: 0;
     left: 0;
+    -webkit-animation: spinner 1s linear 3;
     animation: spinner 1s linear 3;
     visibility: hidden;
 }
@@ -330,6 +368,7 @@ path {
     bottom: 40px;
     left: 0;
     cursor: default;
+    -webkit-animation: svg 3s;
     animation: svg 3s;
     visibility: hidden;
 }
@@ -510,6 +549,7 @@ path {
     fill: url(#icon_color);
     stroke: url(#icon_color);
     opacity: 0;
+    -webkit-animation: color 4s forwards;
     animation: color 4s forwards;
 }
 
@@ -639,7 +679,9 @@ path {
     color: white;
     bottom: 20px;
     right: -30px;
+    -webkit-transition-property: transform;
     transition-property: transform;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -657,7 +699,9 @@ path {
 .price {
     right: 22px;
     bottom: 14px;
+    -webkit-transition-property: transform;
     transition-property: transform;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -670,27 +714,33 @@ path {
 }
 
 .check_item .none[type="checkbox"]:checked ~ .item::after {
-    margin-right: 50px;
+    -webkit-transform: rotate(360deg);
     transform:  rotate(360deg);
+    margin-right: 50px;
 }
 
 .check_item .none[type="checkbox"]:checked ~ .item .price {
+    -webkit-transform: translateX(-60px);
     transform: translateX(-60px);
 }
 
 .first_apparition {
+    -webkit-animation: apparition 1s ease forwards;
     animation: apparition 1s ease forwards;
 }
 
 .second_apparition {
+    -webkit-animation: apparition 1s 0.25s ease forwards;
     animation: apparition 1s 0.25s ease forwards;
 }
 
 .third_apparition {
+    -webkit-animation: apparition 1s 0.5s ease forwards;
     animation: apparition 1s 0.5s ease forwards;
 }
 
 .fourth_apparition {
+    -webkit-animation: apparition 1s 0.75s ease forwards;
     animation: apparition 1s 0.75s ease forwards;
 }
 
@@ -865,6 +915,7 @@ path {
         fill: url(#icon_color);
         stroke: url(#icon_color);
         opacity: 0;
+        -webkit-animation: color 4s forwards;
         animation: color 4s forwards;
     }
 
@@ -877,12 +928,14 @@ path {
 
     .check_item .none:hover ~ .item::after,
     .check_item .none:focus ~ .item::after {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
         margin-right: 50px;
-        transform:  rotate(360deg);
     }
 
     .check_item .none:hover ~ .item .price,
     .check_item .none:focus ~ .item .price {
+        -webkit-transform: translateX(-60px);
         transform: translateX(-60px);
     }
 
